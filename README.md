@@ -1,2 +1,12 @@
 # AEDI-EXAM
  
+Haz dos copias del proyecto descargado; una copia irá para resolver el ejercicio 1 y la otra copia la utilizarás para resolver el ejercicio 2. Por lo tanto, las soluciones de ambos ejercicios son independientes entre sí, y se tomará como base para la realización de cada ejercicio el proyecto original.
+
+1.-
+(5 puntos) Modifica la primera copia de tu proyecto, para cambiar la forma de jugar al cinquillo-oro de manera que cada palo que se inicia en la mesa debe hacerse con un Rey (12), en lugar de con un 5. Como consecuencia se necesita modificar la representación interna de la clase Mesa de manera que, en lugar de almacenar las cartas en un array de dobles colas, se almacenen en un array de Pilas (Stack). Utiliza para ello el TAD Pila<E> de aed1.jar o la clase Stack<E> de java, solo se pueden utilizar los métodos que se detallan al final de este enunciado (Anexo).
+Una vez realizado el ejercicio, añade en el método main un System.out.println, en el que muestres por consola Ejercicio 1, tu nombre y un código que te facilitaremos al acabar el examen. Con todo listo, guarda está nueva versión del proyecto.
+
+2.-
+(5 puntos) Modifica la segunda copia de tu proyecto, para incorporar un nuevo comportamiento en el juego. La modificación afecta a cómo se colocan las cartas en la Mesa: inicialmente sólo se pueden colocar en la mesa cincos, y a continuación todas aquellas cartas superiores o inferiores a las que hay en la mesa y sean del mismo palo, sin necesidad de que sean inmediatamente superiores, ni inferiores. Por ejemplo, en este nuevo cinquillo-oro, si tengo colocado en la mesa en 5 de copas puedo colocar (además de algún otro cinco) cualquier carta superior, como el 9 de copas, o cualquier carta inferior, como el 2 de copas. En el caso de colocar el 9 de copas todas las que estarían en el medio nunca se llegarían a colocar (en este caso el 6, 7 y 8 de copas); lo mismo ocurriria si coloco el 2 de copas, en cuyo caso el 4 y 3 de copas nunca se podrían colocar.
+
+Con esta nueva forma de jugar, podría darse el caso de que todos los jugadores tengan cartas en la mano, pero ninguno pueda colocar una carta en la mesa. Está nueva situación se conoce con el nombre de tablas. Por lo tanto, la partida termina bien porque un jugador coloca todas sus cartas en la mesa o bien porque ningún jugador puede seguir colocando cartas. En caso de producirse tablas, ningún jugador ganaría los 4 puntos de la partida y se mostraría un mensaje para indicarlo.
